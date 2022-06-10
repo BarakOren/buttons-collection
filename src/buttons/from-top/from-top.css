@@ -1,0 +1,18 @@
+.from-top {
+  font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 10px 0;
+    color: white;
+    background: none;
+    border: 3px solid white;
+    background-image: linear-gradient(to top, transparent 50%, white 50%);
+    background-size: 100% 200%;
+    background-position: 0 100%;
+  }
+  
+.from-top:hover {
+    color: black;
+    background-position: 0 0%;
+}

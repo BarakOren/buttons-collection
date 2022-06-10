@@ -1,0 +1,44 @@
+.two-lines {
+font-size: 20px;
+position: relative;
+padding: 10px 30px;
+color: white;
+transition: 0.3s;
+margin: 10px 0;
+border: none;
+background: none;
+}
+
+.two-lines:after {
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+bottom: 0;
+right: 0;
+border-bottom: 3px solid white;
+border-right: 3px solid white;
+transition: all 0.4s, opacity 0.1s 0.4s;
+opacity: 0;
+}
+
+.two-lines:before {
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+border-top: 3px solid white;
+border-left: 3px solid white;
+transition: all 0.4s, opacity 0.1s 0.4s;
+opacity: 0;
+}
+
+.two-lines:hover:after,
+.two-lines:hover:before {
+width: calc(100% + -3px);
+height: calc(100% + -3px);
+transition: all 0.4s, opacity 0.1s;
+opacity: 1;
+}
