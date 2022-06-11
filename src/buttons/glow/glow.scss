@@ -1,0 +1,17 @@
+.glow {
+    width: 150px;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #262626;
+    color: #808080;
+    transition: 0.8s all;
+    box-shadow: 0 0 0px rgb(200, 255, 0);
+    position: relative;
+
+    &:hover{
+        color: rgb(200, 255, 0);
+        box-shadow: 0 0 50px 5px rgb(200, 255, 0);
+    }
+
+}

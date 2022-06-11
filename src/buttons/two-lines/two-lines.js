@@ -1,7 +1,7 @@
 import "./two-lines.css"
 
 const TwoLines = () => {
-    return <button className="two-lines">Hello</button>
+    return <button className="two-lines">Frame</button>
 }
 
 export default TwoLines;

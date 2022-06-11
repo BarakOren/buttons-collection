@@ -1,0 +1,45 @@
+.invert {
+    font-size: 20px;
+    padding: 10px 0;
+    width: 150px;
+    height: 28px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #00d8ff, #00c0fd, #00a6f7, #008ced, #036fdc);    // filter: invert(1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &:before{
+        transition: .2s all;
+        content: "";
+        width: 150px;
+        height: 100%;
+        left: -150px;
+        top: 0;
+        position: absolute;
+        background-image: linear-gradient(to right, #ff2d66, #ff2662, #ff1e5f, #ff125b, #ff0057);
+    }
+
+    &:hover{
+        box-shadow: 20px 0 30px #ff0057;
+        transition: .2s all;
+        transition-delay: 0.1s;
+        &:before {
+            left: 0;
+        }
+    }
+}
+
+.invert:hover {
+ 
+    .text{
+        color: black;
+    }
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .2s all;
+}

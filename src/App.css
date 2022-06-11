@@ -8,6 +8,7 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 20px;
 }
 
@@ -17,7 +18,9 @@ button {
   align-items: center;
   justify-content: space-evenly;
   width: 90%;
+  margin: 30px 0;
 }
+
 
 h1 {
   font-weight: 200;

@@ -1,11 +1,10 @@
 
 .spinning-lines {
-    // https://codepen.io/nocni_sovac/pen/vYGqvJK
-    // https://freefrontend.com/css-buttons/
     font-size: 20px;
-    padding: 10px 30px;
+    padding: 10px 0;
+    width: 150px;
     border-radius: 4px;
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     overflow: hidden;
     filter: hue-rotate(0deg);

@@ -1,0 +1,62 @@
+.bomb-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    background: rgb(255, 24, 24);
+    cursor: pointer;
+    border-radius: 6px;
+
+    &:hover {
+        animation: effect 1000ms ease-out forwards;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          left: 40px;
+          width: 100px;
+          height: 40px;
+          border-radius: 100%;
+          animation: pop 1000ms ease-out forwards;
+        }
+    
+        &::after {
+          content: '';
+          position: absolute;
+          right: 40px;
+          width: 100px;
+          height: 40px;
+          border-radius: 100%;
+          animation: pop 3s ease-out ;
+        }
+      }
+    }
+    
+    @keyframes pop {
+      100% {
+        transform: scale(2);
+        filter: blur(20px);
+        opacity: 0;
+      }
+    }
+    
+    @keyframes effect {
+      0% {
+        color: rgb(255, 24, 24);
+        box-shadow:
+          0 0 30px 0 rgb(255, 39, 39),
+          0 0 5px 0 rgb(255, 38, 0),
+      }
+      
+      100% {
+        color: white;
+        box-shadow:
+          0 0 50px 50px rgba(255, 130, 10, 0),
+          0 0 50px 30px rgba(226, 230, 10, 0),
+      }
+
+}

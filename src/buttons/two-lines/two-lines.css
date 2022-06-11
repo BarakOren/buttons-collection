@@ -1,7 +1,8 @@
 .two-lines {
-font-size: 20px;
 position: relative;
-padding: 10px 30px;
+font-size: 20px;
+padding: 10px 0;
+width: 150px;
 color: white;
 transition: 0.3s;
 margin: 10px 0;

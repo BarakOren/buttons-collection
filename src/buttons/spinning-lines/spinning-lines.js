@@ -6,7 +6,7 @@ const SpinningLines = () => {
         <span></span>
         <span></span>
         <span></span>
-        HOVER ME
+        Colors Lines
     </div>
 }
 

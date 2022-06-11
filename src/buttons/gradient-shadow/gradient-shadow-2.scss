@@ -1,0 +1,35 @@
+.gradient-2 {
+    position: relative;
+    display: flex;
+    padding: 10px 0;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #07015e, #430257);
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    
+    &:before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        width: 120%;
+        height: 120%;
+        background: inherit;
+        transform: scale(1) translateY(-50%) translateX(-50%);
+        filter: blur(10px);
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      &:hover:before {
+        opacity: 0.8;
+      }
+    }
+    
+    
